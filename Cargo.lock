@@ -149,34 +149,17 @@ dependencies = [
 ]
 
 [[package]]
-name = "crypto-get"
-version = "0.1.0"
-dependencies = [
- "log",
- "reqwest",
- "serde",
- "tokio",
-]
-
-[[package]]
-name = "crypto-print"
-version = "0.1.0"
-dependencies = [
- "crypto-get",
- "log",
- "prettytable-rs",
- "thousands",
-]
-
-[[package]]
 name = "crypto-splash"
 version = "0.1.0"
 dependencies = [
- "crypto-get",
- "crypto-print",
  "env_logger",
  "log",
+ "prettytable-rs",
+ "reqwest",
+ "serde",
  "structopt",
+ "thousands",
+ "tokio",
 ]
 
 [[package]]

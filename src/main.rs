@@ -1,5 +1,11 @@
-use crypto_get::get_coins;
-use crypto_print::format_coins;
+mod get;
+mod print;
+
+#[macro_use]
+extern crate prettytable;
+
+pub use get::get_coins;
+pub use print::format_coins;
 use env_logger;
 use log::debug;
 use structopt::StructOpt;

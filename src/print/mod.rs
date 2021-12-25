@@ -1,11 +1,8 @@
-#[macro_use]
-extern crate prettytable;
-
 use prettytable::{Table, Row, Cell};
 use std::ops::Add;
 use thousands::Separable;
 use std::vec;
-use crypto_get::Coin;
+pub use crate::get::Coin;
 
 fn format_multiplier(base_market_cap: f64, coin_market_cap: f64, coin_price: f64) -> String {
     let multiplier = (base_market_cap / coin_market_cap).round();
