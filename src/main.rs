@@ -11,6 +11,7 @@ use log::debug;
 use structopt::StructOpt;
 
 #[derive(StructOpt)]
+#[structopt(name = "crytpo-splash", about = "Pass in a space delimited list of coins, but watch out, btc, sol, but AVAX is all caps - 🤷‍♂️")]
 struct Cli {
     coins: Vec<String>,
 }
