@@ -1,0 +1,16 @@
+[workspace]
+members = ["crates/*"]
+
+
+[package]
+name = "crypto-splash"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+crypto-get = { path = "./crates/crypto-get" }
+crypto-print = { path = "./crates/crypto-print" }
+log = "0.4.5"
+env_logger = "0.9.0"
+structopt = { version = "0.3", default-features = false }

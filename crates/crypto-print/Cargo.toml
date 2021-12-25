@@ -1,0 +1,11 @@
+[package]
+name = "crypto-print"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+crypto-get = { path = "../crypto-get" }
+log = "0.4.5"
+prettytable-rs = "^0.8"
+thousands = "0.2.0"
