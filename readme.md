@@ -1,5 +1,11 @@
 ## Run the project
     - Use RUST_LOG to set env var to show logs
 
-    cargo run -p cli -- --help
-    RUST_LOG=debug cargo run
+## To see the help
+    cargo run -- --help
+
+## Sample run Command
+    cargo run sol gala AVAX
+
+## To run the compiled 
+    ./target/debug/crypto-splash sol AVAX
