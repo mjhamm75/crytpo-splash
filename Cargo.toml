@@ -5,17 +5,6 @@ members = ["crates/*"]
 name = "crypto-splash"
 version = "0.1.0"
 edition = "2021"
-
-[dependencies]
-crypto-get = { path = "./crates/crypto-get" }
-crypto-print = { path = "./crates/crypto-print" }
-log = "0.4.5"
-env_logger = "0.9.0"
-structopt = { version = "0.3", default-features = false }
-
-[package]
-name = "crypto-splash"
-version = "0.1.0"
 authors = ["Jason Hamm <jasonhamm.me@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "A tool to view crypto via terminal"
@@ -24,3 +13,10 @@ homepage = "https://github.com/mjhamm75/crytpo-splash"
 repository = "https://github.com/mjhamm75/crytpo-splash"
 keywords = ["cli", "search", "demo"]
 categories = ["command-line-utilities"]
+
+[dependencies]
+crypto-get = { path = "./crates/crypto-get", version = "0.1.0" }
+crypto-print = { path = "./crates/crypto-print", version = "0.1.0" }
+log = "0.4.5"
+env_logger = "0.9.0"
+structopt = { version = "0.3", default-features = false }
